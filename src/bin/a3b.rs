@@ -9,19 +9,19 @@
 // * Use an if..else if..else block to determine which message to display
 // * Use the println macro to display messages to the terminal
 
-fn main() {
-    fn more_or_less_than_five(num: i32) -> () {
-        let compare_number = 5;
+fn more_or_less_than_five(num: i32) -> () {
+    let compare_number = 5;
 
-        if num < compare_number {
-            println!("<5")
-        } else if num > compare_number {
-            println!(">5")
-        } else {
-            println!("=5")
-        }
+    if num < compare_number {
+        println!("<5")
+    } else if num > compare_number {
+        println!(">5")
+    } else {
+        println!("=5")
     }
+}
 
+fn main() {
     let a = 6;
     let b = 2;
     let c = 5;
