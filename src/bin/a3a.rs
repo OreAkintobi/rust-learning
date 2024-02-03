@@ -10,4 +10,18 @@
 // * Use an if..else block to determine which message to display
 // * Use the println macro to display messages to the terminal
 
-fn main() {}
+fn main() {
+    fn say_hello_or_goodbye(bool: bool) -> () {
+        if bool == true {
+            println!("hello")
+        } else {
+            println!("goodbye")
+        }
+    }
+
+    let a = false;
+    let b = true;
+
+    say_hello_or_goodbye(a);
+    say_hello_or_goodbye(b);
+}
