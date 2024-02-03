@@ -7,4 +7,17 @@
 // * Use a variable set to either true or false
 // * Use a match expression to determine which message to display
 
-fn main() {}
+fn is_true_or_false(bool: bool) -> () {
+    match bool {
+        true => print!("it's true"),
+        false => print!("it's false"),
+    }
+}
+
+fn main() {
+    let a = true;
+    let b = false;
+
+    is_true_or_false(a);
+    is_true_or_false(b);
+}
