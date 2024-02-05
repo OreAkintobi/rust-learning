@@ -28,7 +28,7 @@ fn print_message(condition: bool) -> () {
 }
 
 fn main() {
-    let num = 1003;
+    let num = 100;
 
     print_message(boolean(num))
 }
