@@ -12,4 +12,23 @@
 // * Use a match expression to determine which message
 //   to print
 
-fn main() {}
+fn boolean(num: i32) -> bool {
+    if num > 100 {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+fn print_message(condition: bool) -> () {
+    match condition {
+        true => println!("its big"),
+        _ => println!("its small"),
+    }
+}
+
+fn main() {
+    let num = 1003;
+
+    print_message(boolean(num))
+}
