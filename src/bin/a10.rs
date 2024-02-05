@@ -29,6 +29,8 @@ fn print_message(condition: bool) -> () {
 
 fn main() {
     let num = 100;
+    let vl_gt_100 = num > 100;
 
-    print_message(boolean(num))
+    print_message(boolean(num));
+    print_message(vl_gt_100);
 }
